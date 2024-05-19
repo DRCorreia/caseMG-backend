@@ -1,37 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema de Gestão de Estoque</title>
-</head>
-<body>
-    <h1>Sistema de Gestão de Estoque</h1>
-    <p>Este é um sistema simples de gestão de estoque desenvolvido em Laravel.</p>
-    
-    <h2>Requisitos</h2>
-    <ul>
-        <li>PHP 8.1 ou superior</li>
-        <li>Composer</li>
-        <li>MySQL</li>
-    </ul>
+Requisitos
+PHP 8.1 ou superior
+Composer
+MySQL
 
-    <h2>Instalação</h2>
-    <p>Siga os passos abaixo para configurar e rodar o projeto.</p>
+Instalação
+Siga os passos abaixo para configurar e rodar o projeto.
 
-    <h3>1. Clone o repositório</h3>
-    <pre><code>git clone https://github.com/DRCorreia/caseMG-backend.git
-cd caseMG-backend
-</code></pre>
+1. Clone o repositório
+git clone https://github.com/seu-usuario/sistema-estoque.git](https://github.com/DRCorreia/caseMG-backend.git
 
-    <h3>2. Instale as dependências do Composer</h3>
-    <pre><code>composer install
-</code></pre>
+2. Instale as dependências do Composer
+composer install
 
-    <h3>3. Configuração do Banco de Dados</h3>
-    <p>Renomeie o arquivo <code>.env.example</code> para <code>.env</code> e configure as variáveis de ambiente para o seu banco de dados.</p>
+3. Configuração do Banco de Dados
+Renomeie o arquivo .env.example para .env e configure as variáveis de ambiente para o seu banco de dados.
 
-    <h3>4. Dados</h3>
-    <p>Você pode usar o dump que eu deixei anexado na raiz do projeto ou executar o comando <code>php artisan migrate</code>, também na raiz do projeto, para gerar as tabelas. Caso você tenha algum problema ao migrar, verifique se a extensão <code>pdo_mysql</code> está descomentada no seu arquivo <code>php.ini</code>.</p>
-</body>
-</html>
+4. Dados
+Você pode usar o dump que eu deixei anexado na raíz no projeto ou executar o comando php artisan migrate, também na raíz do projeto, para gerar as tabelas. Caso você tenha algum problema ao migrar, verifique se a extensão pdo_mysql está descomentada no seu arquivo php.ini.
