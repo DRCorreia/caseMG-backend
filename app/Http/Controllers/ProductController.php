@@ -127,14 +127,19 @@ class ProductController extends Controller
         ]);
 
         if ($request->stock != $product->stock['qty']) {
+            $qtdMovement = 0;
             $movementType = 'E';
             if ($request->stock < $product->stock['qty']) {
                 $movementType = 'S';
+                $qtdMovement = $product->stock['qty'] - $request->stock;
+            } else {
+                $qtdMovement = $request->stock - $product->stock['qty'];
             }
+
             $movement = Movement::create([
                 'product_id' => $product->id,
                 'movement_type' => $movementType,
-                'movement_qty' => $request->stock,
+                'movement_qty' => $qtdMovement,
             ]);
 
             $product->stock['qty'] = $request->stock;
